@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#home {
+    background: linear-gradient(228deg, #9e4784, #d27685, #37306b, #66347f);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+    width: 100%;
+    height: 120vh;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+
+
+@keyframes imgUpDown {
+    0%{transform: translateY(5px)}
+    50%{transform: translateY(-5px)}
+    100%{transform: translateY(5px)}
+}
+.perfil__img {
+    width: 150px;
+    border-radius: 100px;
+    position: relative;
+    margin-top: 15%;
+
+
+    box-shadow: 3px 3px 34px rgba(0, 0, 0, 0.384);
+
+    transition: .5s;
+
+    animation: imgUpDown 3s infinite;
+}
+
+.top__info{
+    text-align: center;
+}
+
+h1, p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.links {
+    display: grid;
+    width: 70%;
+    gap: 40px;
+    margin-left: 50px;
+    position: relative;
+    top: 2%;
+
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: #fff;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.384);
+    cursor: pointer;
+}
+
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    top: 10px;
+    text-transform: capitalize;
+    color: #9c3243;
+    text-align: center;
+    text-decoration: none;
+}
+
+i {
+    float: left;
+    position: relative;
+    left: 10px;
+    font-size: 1.5rem;
+    top: -2px;
+}
+
+
+.btn:active {
+    box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.384);
+    transform: translateY(5px);
+
+}
